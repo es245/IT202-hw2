@@ -1,0 +1,19 @@
+{
+  "patients": {
+    "11112222": {
+      "password": "password4"
+    },
+    "11223344": {
+      "password": "password2"
+    },
+    "12345678": {
+      "password": "password1"
+    },
+    "12348765": {
+      "password": "password3"
+    },
+    "55556666": {
+      "password": "password5"
+    }
+  }
+}

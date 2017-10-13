@@ -9,9 +9,30 @@
 </head>
 <body>
 
+  <form action="#" enctype="" id="patient-form" autocomplete="off" onsubmit="event.preventDefault(); validate();">
+    <h3>Name</h3>
+    <input type="text" name="patient_name" id="patient_name" form="patient-form">
+    <p id="name_error"></p>
+    
+    <h3>8-Digit ID</h3>
+    <input type="text" name="id" id="idNumber" form="patient-form">
+    <p id="id_error"></p>
+    <h3>Email</h3>
+    <input type="text" name="email" id="email">
+    <input type="checkbox" name="email_check" id="email_check" form="patient-form" onchange=""><label for="email">I would like to recieve an email notification.</label>
+    <p id="email_error"></p>
+    <h3>Select Transaction</h3>
+    <select name="list" id="dropdown" form="patient-form">
+      <option value="hello">List Item 1</option>
+      <option value="there">List Item 2</option>
+      <option value="world">List Item 3</option>
+      <option value="!">List Item 4</option>
+    </select>
+    
+    <input type="submit">
+  </form>
 
-  <script type="text/javascript" src="js/main.js">
-
-  </script>
+  <div id="patients"></div>
+  <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
