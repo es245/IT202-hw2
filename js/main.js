@@ -12,6 +12,10 @@ function verify(name, id, email){
         node.appendChild(textnode);                              // Append the text to <li>
         document.getElementById("patient-form").appendChild(node);     // Append <li> to <ul> with id="myList"
     }
+
+    else{
+        document.getElementById('name_error').innerHTML = "Name and ID do not match, please try again.";
+    }
 }
 
 
